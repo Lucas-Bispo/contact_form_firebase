@@ -1,6 +1,7 @@
 const firebaseConfig = {
     //   copie as infomações de configuracao do banco de dados 
     
+    
         apiKey: "AIzaSyB2PZPBMc6JR7_5cQQU4wzCHDEBm_NNw5A",
         authDomain: "contactform-74815.firebaseapp.com",
         databaseURL: "https://contactform-74815-default-rtdb.firebaseio.com",
