@@ -25,9 +25,11 @@ const firebaseConfig = {
   
     var name = getElementVal("name");
     var emailid = getElementVal("emailid");
+    var dateid = getElementVal("dateid");
     var msgContent = getElementVal("msgContent");
+    
   
-    saveMessages(name, emailid, msgContent);
+    saveMessages(name, emailid, dateid, msgContent);
   
     //   alerta 
     document.querySelector(".alert").style.display = "block";
@@ -41,12 +43,13 @@ const firebaseConfig = {
     document.getElementById("contactForm").reset();
   }
   
-  const saveMessages = (name, emailid, msgContent) => {
+  const saveMessages = (name, emailid, dateid, msgContent) => {
     var newContactForm = contactFormDB.push();
   
     newContactForm.set({
       name: name,
       emailid: emailid,
+      dateid: dateid,
       msgContent: msgContent,
     });
   };
